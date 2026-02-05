@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Career Chat">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect fill='%23007AFF' width='180' height='180' rx='40'/%3E%3Ctext x='90' y='120' font-family='SF Pro Display, -apple-system' font-size='70' font-weight='600' fill='white' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+    <title>Aditi Sharma</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="avatar">
+                    <img src="" id="headerAvatar" alt="Aditi Sharma">
+                </div>
+                <div class="header-info">
+                    <h1>Aditi Sharma</h1>
+                    <p class="subtitle">Senior Product Designer at Salesforce</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message received">
+                <div class="message-bubble">
+                    <p>Hi! I'm here to answer questions about Aditi's career, experience, and skills. What would you like to know?</p>
+                </div>
+                <div class="message-time">Now</div>
+            </div>
+        </div>
+        
+        <div class="quick-questions">
+            <p class="quick-questions-label">Quick questions:</p>
+            <div class="quick-buttons">
+                <button class="quick-btn" onclick="askQuestion('What is Aditi\'s current role?')">Current Role</button>
+                <button class="quick-btn" onclick="askQuestion('What are Aditi\'s key skills?')">Key Skills</button>
+                <button class="quick-btn" onclick="askQuestion('Tell me about Aditi\'s experience at Walmart Labs')">Walmart Labs</button>
+                <button class="quick-btn" onclick="askQuestion('What is Aditi\'s educational background?')">Education</button>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <input 
+                type="text" 
+                id="messageInput" 
+                class="chat-input" 
+                placeholder="iMessage"
+                onkeypress="handleKeyPress(event)"
+            >
+            <button class="send-button" onclick="sendMessage()">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M2 10L18 2L10 18L8 11L2 10Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <script src="photo-embed.js"></script>
+    <script src="script.js"></script>
+    <script src="audio-haptic.js"></script>
+    <script src="haptic.js"></script>
+    <script src="ios-native.js"></script>
+</body>
+</html>

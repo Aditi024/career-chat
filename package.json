@@ -1,0 +1,12 @@
+{
+  "name": "imessage-career-chat",
+  "version": "1.0.0",
+  "description": "Interactive iMessage-style chat app about Aditi Sharma's career",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["chat", "career", "portfolio"],
+  "author": "Aditi Sharma",
+  "license": "MIT"
+}
