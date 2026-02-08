@@ -20,7 +20,7 @@ An interactive iOS 17-style iMessage chat application where hiring managers can 
 
 ## Live Demo
 
-**Production URL:** https://imessage-career-chat-9pbk3ggvp-aditi024s-projects.vercel.app
+**Production URL:** https://imessage-career-chat.vercel.app
 
 ### For Best Experience:
 
